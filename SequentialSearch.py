@@ -5,11 +5,7 @@ the number we are looking for, or it is looking for.
 
 
 def sequential_search(any_list, number):
-    """
-    :param any_list:
-    :param number:
-    :return:
-    """
+
     found = False
     for i in any_list:
         if i == number:
