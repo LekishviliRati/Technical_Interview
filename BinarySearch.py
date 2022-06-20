@@ -21,7 +21,7 @@ def binary_search(any_integer_ordered_list, any_required_number):
         middle_of_list = (first + last) // 2
         if any_integer_ordered_list[middle_of_list] == any_required_number:
             number_found = True
-            print("Required number found")
+            # print("Required number found")
         else:
             if any_required_number < any_integer_ordered_list[middle_of_list]:
                 last = middle_of_list - 1
@@ -33,4 +33,5 @@ def binary_search(any_integer_ordered_list, any_required_number):
 
 ordered_integer_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-binary_search(ordered_integer_list, 7)
+is_7_in_list = binary_search(ordered_integer_list, 7)
+print(is_7_in_list)
